@@ -1,0 +1,71 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.permission"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:5:5-19:19
+12        android:allowBackup="true"
+12-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.0.1] C:\Users\10\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:10:9-35
+19        android:theme="@style/AppTheme" >
+19-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:11:9-40
+20        <activity android:name="com.example.permission.MainActivity" >
+20-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:12:9-18:20
+20-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:12:19-47
+21            <intent-filter>
+21-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:13:13-17:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:14:17-69
+22-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:14:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:16:17-77
+24-->C:\Users\10\AndroidStudioProjects\permission\app\src\main\AndroidManifest.xml:16:27-74
+25            </intent-filter>
+26        </activity>
+27        <activity
+27-->[pub.devrel:easypermissions:3.0.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\5bca8ec8526466fddaa5db495f485c51\easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+28            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+28-->[pub.devrel:easypermissions:3.0.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\5bca8ec8526466fddaa5db495f485c51\easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+29            android:exported="false"
+29-->[pub.devrel:easypermissions:3.0.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\5bca8ec8526466fddaa5db495f485c51\easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+30            android:label=""
+30-->[pub.devrel:easypermissions:3.0.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\5bca8ec8526466fddaa5db495f485c51\easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+31            android:theme="@style/EasyPermissions.Transparent" />
+31-->[pub.devrel:easypermissions:3.0.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\5bca8ec8526466fddaa5db495f485c51\easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+32        <activity
+32-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\8e164e04d8b11fcdda27fdec462fa36c\jetified-play-services-base-11.8.0\AndroidManifest.xml:23:9-26:75
+33            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+33-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\8e164e04d8b11fcdda27fdec462fa36c\jetified-play-services-base-11.8.0\AndroidManifest.xml:24:13-79
+34            android:exported="false"
+34-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\8e164e04d8b11fcdda27fdec462fa36c\jetified-play-services-base-11.8.0\AndroidManifest.xml:25:13-37
+35            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+35-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\8e164e04d8b11fcdda27fdec462fa36c\jetified-play-services-base-11.8.0\AndroidManifest.xml:26:13-72
+36
+37        <meta-data
+37-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\588b090257ccbb5c230e07ce22bcb014\jetified-play-services-basement-11.8.0\AndroidManifest.xml:23:9-25:69
+38            android:name="com.google.android.gms.version"
+38-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\588b090257ccbb5c230e07ce22bcb014\jetified-play-services-basement-11.8.0\AndroidManifest.xml:24:13-58
+39            android:value="@integer/google_play_services_version" />
+39-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\10\.gradle\caches\transforms-2\files-2.1\588b090257ccbb5c230e07ce22bcb014\jetified-play-services-basement-11.8.0\AndroidManifest.xml:25:13-66
+40    </application>
+41
+42</manifest>
