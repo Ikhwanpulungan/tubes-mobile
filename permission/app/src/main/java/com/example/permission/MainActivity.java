@@ -1,21 +1,29 @@
-package com.example.permission;
+package com.test.crud3;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
+import android.os.Handler;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    private int waktu_loading=4000;
+
+    //4000=4 detik
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        // Forward results to EasyPermissions
-        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+
+        setContentView(R.layout.activity_main);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                //setelah loading maka akan langsung berpindah ke home activity
+                startActivity( new Intent(MainActivity.this, FirebaseDBActivity.class));
+
+            }
+        },waktu_loading);
     }
 }
