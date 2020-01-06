@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.permission">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.test.crud3">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:fullBackupContent="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:icon="@mipmap/logocuy"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logocuy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -16,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FirebaseDBActivity"/>
+        <activity android:name=".FirebaseDBCreateActivity"
+            android:label="Lapor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FirebaseDBReadActivity"
+            android:label="Feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FirebaseDBReadSingleActivity"
+            android:label="Detail"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
